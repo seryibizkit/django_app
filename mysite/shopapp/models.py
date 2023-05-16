@@ -21,7 +21,6 @@ class Product(models.Model):
     #         return self.description
     #     return self.description[:48] + "..."
 
-
     def __str__(self) -> str:
         return f"Product(pk={self.pk}, name={self.name!r})"
 
@@ -31,4 +30,4 @@ class Order(models.Model):
     promocode = models.CharField(max_length=20, null=False, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.PROTECT)
-    products = models.ManyToManyField(Product, related_name="orders")
+    products = models.ManyToManyField(Product, related_name="orders", )
