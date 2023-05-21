@@ -1,6 +1,9 @@
 from timeit import default_timer
+import re
 
 from django.contrib.auth.models import Group
+from django.contrib.auth.mixins import LoginRequiredMixin, \
+    PermissionRequiredMixin, UserPassesTestMixin
 from django.http import HttpResponse, HttpRequest, HttpResponseRedirect
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.urls import reverse_lazy
@@ -57,31 +60,50 @@ class ProductsListView(ListView):
     queryset = Product.objects.filter(archived=False)
 
 
-class ProductCreateView(CreateView):
+class ProductCreateView(PermissionRequiredMixin, CreateView):
+    permission_required = ["shopapp.add_product", ]
     model = Product
     fields = "name", "price", "description", "discount"
     success_url = reverse_lazy("shopapp:products_list")
 
+    def form_valid(self, form):
+        form.instance.created_by = self.request.user
+        return super().form_valid(form)
 
-class ProductUpdateView(UpdateView):
+
+class ProductUpdateView(PermissionRequiredMixin, UpdateView):
+    permission_required = ["shopapp.change_product", ]
+    permission_denied_message = "You are not allowed to edit this product"
+
     model = Product
     fields = "name", "price", "description", "discount"
     template_name_suffix = "_update_form"
+
+    def form_valid(self, form):
+        if self.object.created_by == self.request.user or self.request.user.is_superuser:
+            self.object.save()
+            success_url = self.get_success_url()
+            return HttpResponseRedirect(success_url)
+        else:
+            return HttpResponseRedirect(reverse("shopapp:product_details", kwargs={"pk": self.object.pk}))
 
     def get_success_url(self):
         return reverse("shopapp:product_details", kwargs={"pk": self.object.pk})
 
 
-class ProductDeleteView(DeleteView):
+class ProductDeleteView(PermissionRequiredMixin, DeleteView):
+    permission_required = ["shopapp.delete_product", ]
+    permission_denied_message = "You are not allowed to archive this product"
     model = Product
     success_url = reverse_lazy("shopapp:products_list")
 
     def form_valid(self, form):
-        success_url = self.get_success_url()
-        self.object.archived = True
-        self.object.save()
-        return HttpResponseRedirect(success_url)
-
+        if self.object.created_by == self.request.user or self.request.user.is_superuser:
+            success_url = self.get_success_url()
+            self.object.archived = True
+            self.object.save()
+            return HttpResponseRedirect(success_url)
+        return HttpResponseRedirect(reverse("shopapp:product_details", kwargs={"pk": self.object.pk}))
 
 # def create_product(request: HttpRequest) -> HttpResponse:
 #     if request.method == "POST":
@@ -102,13 +124,14 @@ class ProductDeleteView(DeleteView):
 #     return render(request, 'shopapp/create-product.html', context=context)
 
 
-class OrdersListView(ListView):
+class OrdersListView(LoginRequiredMixin, ListView):
     queryset = (
         Order.objects.select_related("user").prefetch_related("products").all()
     )
 
 
-class OrderDetailView(DetailView):
+class OrderDetailView(PermissionRequiredMixin, DetailView):
+    permission_required = ["shopapp.view_order", ]
     template_name = "shopapp/order_details.html"
     queryset = (
         Order.objects.select_related("user").prefetch_related("products").all()

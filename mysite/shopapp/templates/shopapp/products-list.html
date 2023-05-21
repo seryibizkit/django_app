@@ -14,18 +14,20 @@
                     Name: {{ product.name }}</a></p>
                 <p>Price: {{ product.price }}</p>
                 <p>Discount: {% firstof product.discount 'no discount' %}</p>
+                <p>Created by: {% firstof product.created_by 'Unknown' %}</p>
             </div>
             {% endfor %}
         </div>
     {% else %}
         <h3>No products yet</h3>
     {% endif %}
-
+    {% if perms.shopapp.add_product %}
     <div>
     <a href="{% url 'shopapp:product_create'%}">
         >Create a new product
     </a>
     </div>
+    {% endif %}
     <div>
     <a href="{% url 'shopapp:order_create'%}">
         >Create a new order
