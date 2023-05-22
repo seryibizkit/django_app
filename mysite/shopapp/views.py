@@ -71,39 +71,38 @@ class ProductCreateView(PermissionRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class ProductUpdateView(PermissionRequiredMixin, UpdateView):
-    permission_required = ["shopapp.change_product", ]
-    permission_denied_message = "You are not allowed to edit this product"
-
+class ProductUpdateView(UserPassesTestMixin, UpdateView):
     model = Product
     fields = "name", "price", "description", "discount"
     template_name_suffix = "_update_form"
 
-    def form_valid(self, form):
-        if self.object.created_by == self.request.user or self.request.user.is_superuser:
-            self.object.save()
-            success_url = self.get_success_url()
-            return HttpResponseRedirect(success_url)
-        else:
-            return HttpResponseRedirect(reverse("shopapp:product_details", kwargs={"pk": self.object.pk}))
+    def test_func(self):
+        if self.request.user.is_superuser:
+            return True
+        has_edit_perm = self.request.user.has_perm("shopapp.change_product")
+        created_by_current_user = self.get_object().created_by == self.request.user
+        return has_edit_perm and created_by_current_user
 
     def get_success_url(self):
         return reverse("shopapp:product_details", kwargs={"pk": self.object.pk})
 
 
-class ProductDeleteView(PermissionRequiredMixin, DeleteView):
-    permission_required = ["shopapp.delete_product", ]
-    permission_denied_message = "You are not allowed to archive this product"
+class ProductDeleteView(UserPassesTestMixin, DeleteView):
     model = Product
     success_url = reverse_lazy("shopapp:products_list")
 
+    def test_func(self):
+        if self.request.user.is_superuser:
+            return True
+        has_edit_perm = self.request.user.has_perm("shopapp.change_product")
+        created_by_current_user = self.get_object().created_by == self.request.user
+        return has_edit_perm and created_by_current_user
+
     def form_valid(self, form):
-        if self.object.created_by == self.request.user or self.request.user.is_superuser:
-            success_url = self.get_success_url()
-            self.object.archived = True
-            self.object.save()
-            return HttpResponseRedirect(success_url)
-        return HttpResponseRedirect(reverse("shopapp:product_details", kwargs={"pk": self.object.pk}))
+        success_url = self.get_success_url()
+        self.object.archived = True
+        self.object.save()
+        return HttpResponseRedirect(success_url)
 
 # def create_product(request: HttpRequest) -> HttpResponse:
 #     if request.method == "POST":
