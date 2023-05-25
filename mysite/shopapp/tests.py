@@ -2,7 +2,7 @@ from string import ascii_letters
 
 from random import choices
 from django.conf import settings
-from django.contrib.auth.models import User, Permission
+from django.contrib.auth.models import User
 from django.urls import reverse
 from django.test import TestCase
 
@@ -105,6 +105,8 @@ class ProductsExportViewTestCase(TestCase):
         response = self.client.get(reverse("shopapp:products-export"))
         self.assertEqual(response.status_code, 200)
         products = Product.objects.order_by("pk").all()
+        for product in products:
+            print(product.pk, product.name)
         expected_data = [
             {
                 "pk": product.pk,
@@ -152,14 +154,14 @@ class OrderDetailViewTestCase(TestCase):
 
 class OrdersExportTestCase(TestCase):
     fixtures = [
-        "users-fixture.json",
-        "products-fixture.json",
-        "orders-fixture.json",
+        "shopapp/fixtures/products-fixture.json",
+        "shopapp/fixtures/users-fixture.json",
+        "shopapp/fixtures/orders-fixture.json"
     ]
 
     @classmethod
     def setUpClass(cls):
-        cls.user = User.objects.create_user(username="UserTest", password="12345")
+        cls.user = User.objects.create_user(username="UserTest", password="12345678")
         cls.user.is_staff = True
         cls.user.save()
 
@@ -173,7 +175,7 @@ class OrdersExportTestCase(TestCase):
     def test_get_orders_view(self):
         response = self.client.get(reverse("shopapp:orders-export"))
         self.assertEqual(response.status_code, 200)
-        orders = Order.objects.select_related("user").prefetch_related("products").all()
+        orders = Order.objects.order_by("pk").all()
         expected_data = [
             {
                 "pk": order.pk,
@@ -189,4 +191,3 @@ class OrdersExportTestCase(TestCase):
             orders_data["orders"],
             expected_data,
         )
-

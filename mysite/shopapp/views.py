@@ -204,7 +204,7 @@ class OrdersExportView(UserPassesTestMixin, View):
 
     @classmethod
     def get(cls, request: HttpRequest) -> HttpResponse:
-        orders = Order.objects.select_related("user").prefetch_related("products").all()
+        orders = Order.objects.order_by("pk").all()
         orders_data = [
             {
                 'pk': order.pk,
