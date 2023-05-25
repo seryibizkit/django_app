@@ -3,7 +3,7 @@ from django.urls import path, include
 
 from .views import get_cookie_view, set_cookie_view, \
     set_session_view, get_session_view, MyLogoutView, AboutMeView, \
-    RegisterView
+    RegisterView, FooBarView
 
 
 app_name = "myauth"
@@ -23,4 +23,7 @@ urlpatterns = [
     path("cookie/set/", set_cookie_view, name="cookie-set"),
     path("session/get/", get_session_view, name="session-get"),
     path("session/set/", set_session_view, name="session-set"),
+
+    path("foo-bar/", FooBarView.as_view(), name="foo-bar"),
+
 ]

@@ -4,7 +4,7 @@ import re
 from django.contrib.auth.models import Group
 from django.contrib.auth.mixins import LoginRequiredMixin, \
     PermissionRequiredMixin, UserPassesTestMixin
-from django.http import HttpResponse, HttpRequest, HttpResponseRedirect
+from django.http import HttpResponse, HttpRequest, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.urls import reverse_lazy
 from django.views import View
@@ -60,15 +60,21 @@ class ProductsListView(ListView):
     queryset = Product.objects.filter(archived=False)
 
 
-class ProductCreateView(PermissionRequiredMixin, CreateView):
-    permission_required = ["shopapp.add_product", ]
+class ProductCreateView(CreateView):
     model = Product
     fields = "name", "price", "description", "discount"
     success_url = reverse_lazy("shopapp:products_list")
 
-    def form_valid(self, form):
-        form.instance.created_by = self.request.user
-        return super().form_valid(form)
+
+# class ProductCreateView(PermissionRequiredMixin, CreateView):
+#     permission_required = ["shopapp.add_product", ]
+#     model = Product
+#     fields = "name", "price", "description", "discount"
+#     success_url = reverse_lazy("shopapp:products_list")
+#
+#     def form_valid(self, form):
+#         form.instance.created_by = self.request.user
+#         return super().form_valid(form)
 
 
 class ProductUpdateView(UserPassesTestMixin, UpdateView):
@@ -174,3 +180,39 @@ def create_order(request: HttpRequest) -> HttpResponse:
         "form": form
     }
     return render(request, 'shopapp/create-order.html', context=context)
+
+
+class ProductsExportView(View):
+    @classmethod
+    def get(cls, request: HttpRequest) -> HttpResponse:
+        products = Product.objects.order_by("pk").all()
+        products_data = [
+            {
+                'pk': product.pk,
+                'name': product.name,
+                'price': product.price,
+                'archived': product.archived
+            }
+            for product in products
+        ]
+        return JsonResponse({"products": products_data})
+
+
+class OrdersExportView(UserPassesTestMixin, View):
+    def test_func(self):
+        return self.request.user.is_staff
+
+    @classmethod
+    def get(cls, request: HttpRequest) -> HttpResponse:
+        orders = Order.objects.select_related("user").prefetch_related("products").all()
+        orders_data = [
+            {
+                'pk': order.pk,
+                "delivery_address": order.delivery_address,
+                "promocode": order.promocode,
+                "user_id": order.user.pk,
+                "products_id": [product.pk for product in order.products.all()],
+            }
+            for order in orders
+        ]
+        return JsonResponse({"orders": orders_data})

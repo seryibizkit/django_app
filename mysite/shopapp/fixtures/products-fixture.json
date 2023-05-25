@@ -1,0 +1,98 @@
+[
+  {
+    "model": "shopapp.product",
+    "pk": 1,
+    "fields": {
+      "name": "Laptop",
+      "description": "Testing short description",
+      "price": "1999.00",
+      "discount": 0,
+      "created_at": "2023-05-07T21:02:32.561Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 2,
+    "fields": {
+      "name": "Desktop",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim pellentesque sapien, non malesuada turpis tempus a. Quisque eu dictum purus, nec aliquet nibh. Vivamus interdum turpis ut metus vulputate, quis finibus neque dignissim. Maecenas felis metus, scelerisque sed condimentum sed, mollis ut eros. Cras molestie, ipsum quis vehicula iaculis, dolor sem hendrerit nunc, vel vehicula elit nibh eu erat. Praesent convallis, risus a consectetur condimentum, turpis justo viverra erat, sit amet blandit massa leo et metus. Etiam sed molestie magna. Aliquam porttitor ultricies sollicitudin.",
+      "price": "2499.00",
+      "discount": 10,
+      "created_at": "2023-05-07T21:02:32.561Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 3,
+    "fields": {
+      "name": "Smartphone",
+      "description": "it's not laptop",
+      "price": "987.00",
+      "discount": 25,
+      "created_at": "2023-05-07T21:02:32.561Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 4,
+    "fields": {
+      "name": "Audio Cd Deftones",
+      "description": "Album \"Adrenaline\" 1997",
+      "price": "9.99",
+      "discount": 0,
+      "created_at": "2023-05-15T17:18:53.137Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 6,
+    "fields": {
+      "name": "amazon kindle",
+      "description": "E-book",
+      "price": "99.00",
+      "discount": 12,
+      "created_at": "2023-05-15T18:43:52.912Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 7,
+    "fields": {
+      "name": "Notebook MSI",
+      "description": "Gaming Naotebook core i9",
+      "price": "1599.00",
+      "discount": 5,
+      "created_at": "2023-05-15T18:46:40.088Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 8,
+    "fields": {
+      "name": "Gojira Audio CD",
+      "description": "album Stranded 2005",
+      "price": "7.99",
+      "discount": 0,
+      "created_at": "2023-05-18T20:32:31.346Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 9,
+    "fields": {
+      "name": "Swimming jacket for big-sized dog",
+      "description": "Comfortable swimming jacket for dogs like golden retriever or labrador",
+      "price": "99.00",
+      "discount": 10,
+      "created_at": "2023-05-21T15:16:31.881Z",
+      "archived": false
+    }
+  }
+]
