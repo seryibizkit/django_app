@@ -154,13 +154,15 @@ class OrderDetailViewTestCase(TestCase):
 
 class OrdersExportTestCase(TestCase):
     fixtures = [
-        "shopapp/fixtures/products-fixture.json",
-        "shopapp/fixtures/users-fixture.json",
-        "shopapp/fixtures/orders-fixture.json"
+        "products-fixture.json",
+        "groups-fixture.json",
+        "users-fixture.json",
+        "orders-fixture.json"
     ]
 
     @classmethod
     def setUpClass(cls):
+        super().setUpClass()
         cls.user = User.objects.create_user(username="UserTest", password="12345678")
         cls.user.is_staff = True
         cls.user.save()
