@@ -11,7 +11,7 @@ from django.views import View
 from django.views.generic import TemplateView, ListView, \
     DetailView, CreateView, UpdateView, DeleteView
 
-from .models import Product, Order
+from .models import Product, Order, ProductImage
 from .forms import ProductForm, OrderForm, GroupForm
 
 
@@ -49,7 +49,8 @@ class GroupListView(View):
 
 class ProductDetailsView(DetailView):
     template_name = "shopapp/product-details.html"
-    model = Product
+    # model = Product
+    queryset = Product.objects.prefetch_related("images")
     context_object_name = "product"
 
 
@@ -62,7 +63,7 @@ class ProductsListView(ListView):
 
 class ProductCreateView(CreateView):
     model = Product
-    fields = "name", "price", "description", "discount"
+    fields = "name", "price", "description", "discount", "preview"
     success_url = reverse_lazy("shopapp:products_list")
 
 
@@ -79,15 +80,27 @@ class ProductCreateView(CreateView):
 
 class ProductUpdateView(UserPassesTestMixin, UpdateView):
     model = Product
-    fields = "name", "price", "description", "discount"
+    # fields = "name", "price", "description", "discount", "preview"
     template_name_suffix = "_update_form"
+    form_class = ProductForm
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        preview = form.cleaned_data["preview"]
+        print(preview)
+        for image in form.files.getlist("images"):
+            ProductImage.objects.create(
+                product=self.object,
+                image=image,
+            )
+        return response
 
     def test_func(self):
         if self.request.user.is_superuser:
             return True
         has_edit_perm = self.request.user.has_perm("shopapp.change_product")
-        created_by_current_user = self.get_object().created_by == self.request.user
-        return has_edit_perm and created_by_current_user
+        # created_by_current_user = self.get_object().created_by == self.request.user
+        return has_edit_perm  # and created_by_current_user
 
     def get_success_url(self):
         return reverse("shopapp:product_details", kwargs={"pk": self.object.pk})

@@ -1,0 +1,44 @@
+{% extends 'myauth/base.html' %}
+
+{% block title %}
+    Accounts list
+{% endblock %}
+{% block body %}
+    <h1>Accounts:</h1>
+    {% if object_list %}
+        <div>
+            {% for profile in object_list %}
+            <div>
+                {% if profile.user_id == user.pk %}
+                <p><a href="{% url 'myauth:about-me' %}">Details profile #{{ profile.pk }}</a></p>
+                {% else %}
+                <p><a href="{% url 'myauth:account_details' pk=profile.pk %}">Details profile #{{ profile.pk }}</a></p>
+                {% endif %}
+                <p>First name: {% firstof profile.user.first_name 'not entered' %}</p>
+                <p>Last name: {% firstof profile.user.last_name 'not entered' %}</p>
+                <p>Bio: {% firstof profile.bio 'not entered' %}</p>
+                <p>Email: {% firstof profile.user.email 'not entered' %}</p>
+                {% if profile.avatar %}
+                <p>Avatar:</p>
+                <img src="{{ profile.avatar.url }}" height="200" alt="{{ profile.avatar.name }}">
+                {% else %}
+                <p>Avatar: Not uploaded</p>
+                {% endif %}
+                <p>------------------------</p>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <h3>No profiles yet</h3>
+    {% endif %}
+<!--    <div>-->
+<!--            <a href="{% url 'shopapp:products_list' %}">-->
+<!--            >Back to products list-->
+<!--            </a>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--    <a href="{% url 'shopapp:order_create'%}">-->
+<!--        >Create a new order-->
+<!--    </a>-->
+<!--    </div>-->
+{% endblock %}

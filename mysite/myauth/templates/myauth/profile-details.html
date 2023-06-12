@@ -1,0 +1,29 @@
+{% extends 'myauth/base.html' %}
+
+{% block title %}
+  Profile #{{ profile.user_id }}
+{% endblock %}
+{% block body %}
+  <h1>Profile <strong>{{ profile.user.username }}</strong></h1>
+  <div>
+    <div>First name: <em>{{ profile.user.first_name }}</em></div>
+    <div>Last name: <em>{{ profile.user.last_name }}</em></div>
+    <div>Email: {{ profile.user.email }}</div>
+    <div>Bio: <em>{{ profile.bio }}</em></div>
+    <div>Agreement: {{ profile.agreement_accepted }}</div>
+    {% if profile.avatar %}
+      <p>Avatar:</p>
+      <img src="{{ profile.avatar.url }}" height="350" alt="{{ profile.avatar.name }}">
+    {% else %}
+      <div>No avatar yet</div>
+    {% endif %}
+  </div>
+{% if user.is_staff %}
+<div>
+  <a href="{% url 'myauth:account_update' pk=profile.pk %}">>Update profile info</a>
+</div>
+{% endif %}
+<div>
+  <a href="{% url 'myauth:accounts_list' %}">>Back to profiles list</a>
+</div>
+{% endblock %}

@@ -5,11 +5,10 @@
 {% block body %}
   <h1>Update product</h1>
   <div>
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
       {{ form.as_p }}
-      <p id="mes"></p>
-      <button type="submit" onclick="f()">Update</button>
+      <button type="submit">Update</button>
     </form>
   </div>
   <div>
@@ -18,9 +17,3 @@
     </a>
   </div>
 {% endblock %}
-<script>
-  function f(){
-  let mes = "hello"
-  document.getElementById('mes').innerHTML =mes;
-  }
-</script>

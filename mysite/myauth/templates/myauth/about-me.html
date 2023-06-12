@@ -12,15 +12,28 @@
     <p>First name: {{ user.first_name }}</p>
     <p>Last name: {{ user.last_name }}</p>
     <p>Email: {{ user.email }}</p>
-    <p>Bio: {{ user.profile.bio }}</p>
+    <p>Bio: {{ profile.bio }}</p>
+    <p>Agreement: {{ profile.agreement_accepted }}</p>
+    {% if profile.avatar %}
+      <h4>Avatar:</h4>
+      <img src="{{ profile.avatar.url }}" height="350" alt="{{ profile.avatar.name }}">
+    {% else %}
+      <h4>No avatar yet</h4>
+    {% endif %}
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <p>
+      Load new avatar:
+      <input type="file" name="avatar" accept="image/" id="id_avatar"><button type="submit">Load</button>
+      </p>
+    </form>
     {% else %}
     <h2>User is anonymous</h2>
     {% endif %}
-<!--  <form method="post">-->
-<!--    {% csrf_token %}-->
-
-<!--    {{ form.as_p }}-->
-
-<!--    <button type="submit">Login</button>-->
-<!--  </form>-->
+<div>
+  <a href="{% url 'myauth:account_update' pk=profile.pk %}">>Update profile info</a>
+</div>
+<div>
+  <a href="{% url 'myauth:accounts_list' %}">>Back to profiles list</a>
+</div>
 {% endblock %}
