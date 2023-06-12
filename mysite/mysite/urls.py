@@ -17,15 +17,14 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path, include, re_path
-from django.views.generic import RedirectView
+from django.urls import path, include
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('shop/', include('shopapp.urls')),
     path('req/', include('requestdataapp.urls')),
     path('accounts/', include('myauth.urls')),
-    re_path(r'^favicon\.ico$', RedirectView.as_view(url='/static/img/favicon.ico', permanent=True)),
 ]
 
 if settings.DEBUG:
