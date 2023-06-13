@@ -22,7 +22,9 @@ def update_profile(request, *args, **kwargs):
     if request.method == 'POST':
         user_form = UserForm(request.POST, instance=user_inst)
         profile_form = ProfileForm(request.POST, request.FILES, instance=profile_inst)
-        if user_form.is_valid() and profile_form.is_valid() and request.user.is_staff:
+        if user_form.is_valid() \
+                and profile_form.is_valid() \
+                and (request.user.is_staff or user_inst == request.user):
             user_form.save()
             profile_form.save()
             return redirect(reverse('myauth:account_details', kwargs={"pk": profile_inst.pk}))
