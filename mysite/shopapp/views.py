@@ -25,6 +25,7 @@ class ShopIndexView(View):
         context = {
             "time_running": default_timer(),
             "products": products,
+            "items": 1,
         }
         return render(request, "shopapp/shop-index.html", context=context)
 
@@ -114,8 +115,8 @@ class ProductDeleteView(UserPassesTestMixin, DeleteView):
         if self.request.user.is_superuser:
             return True
         has_edit_perm = self.request.user.has_perm("shopapp.change_product")
-        created_by_current_user = self.get_object().created_by == self.request.user
-        return has_edit_perm and created_by_current_user
+        # created_by_current_user = self.get_object().created_by == self.request.user
+        return has_edit_perm
 
     def form_valid(self, form):
         success_url = self.get_success_url()

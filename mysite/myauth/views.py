@@ -14,6 +14,25 @@ from django.views.generic import TemplateView, DetailView
 from django.views.generic.edit import CreateView
 from .models import Profile
 from .forms import ProfileForm, UserForm, AboutMeForm
+from django.utils.translation import gettext_lazy as _, ngettext
+
+
+class HelloView(View):
+    welcome_message = _("Welcome Hello world!")
+
+    def get(self, request: HttpRequest) -> HttpResponse:
+        items_string = request.GET.get("items") or 0
+        items = int(items_string)
+        products_line = ngettext(
+            "one product",
+            "{count} products",
+            items
+        )
+        products_line = products_line.format(count=items)
+        return HttpResponse(
+            f"<h1>{self.welcome_message}</h1>"
+            f"\n<h2>{products_line}</h2>"
+        )
 
 
 def update_profile(request, *args, **kwargs):
