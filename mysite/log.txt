@@ -1,0 +1,64 @@
+2023-06-22 09:35:07,983 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/settings.py changed, reloading.
+2023-06-22 09:35:08,210 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-22 09:35:55,314 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/settings.py changed, reloading.
+2023-06-22 09:35:55,521 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-22 09:58:10,704 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/settings.py changed, reloading.
+2023-06-22 09:58:10,920 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-22 09:58:49,902 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/settings.py changed, reloading.
+2023-06-22 10:03:22,098 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-23 12:19:23,958 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-23 12:20:58,065 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-23 12:20:58,288 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-23 12:22:04,953 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-23 12:22:05,220 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-23 12:22:39,148 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-23 12:22:39,454 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-23 12:22:45,830 [ERROR] django.request: Internal Server Error: /ru/shop/products/export/
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py", line 284, in get
+    name = elem["nate"]
+KeyError: 'nate'
+2023-06-23 12:33:24,690 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-23 12:34:13,640 [ERROR] django.request: Internal Server Error: /ru/shop/products/export/
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py", line 284, in get
+    name = elem["nate"]
+KeyError: 'nate'
+2023-06-23 12:34:13,745 [WARNING] django.request: Not Found: /favicon.ico
+2023-06-23 12:35:51,309 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/urls.py changed, reloading.
+2023-06-23 12:35:51,728 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-23 12:36:09,441 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/urls.py changed, reloading.
+2023-06-23 12:36:09,817 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-23 12:36:42,611 [ERROR] django.request: Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/urls.py", line 27, in trigger_error
+    division_by_zero = 1 / 0
+ZeroDivisionError: division by zero
+2023-06-23 12:38:03,135 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/urls.py changed, reloading.
+2023-06-23 12:38:03,551 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-23 12:38:30,484 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-23 12:38:30,864 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
