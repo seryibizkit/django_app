@@ -10,7 +10,7 @@
         <div>
             {% for article in articles %}
             <div>
-                <p><b>Title:</b> {{ article.title }}</p>
+                <p><b>Title:</b> <a href="{% url 'blogapp:article' pk=article.pk %}">{{ article.title }}</a></p>
                 <p>Publication date : <code>{{ article.pub_date }}</code></p>
                 <p>Author: {{ article.author.name }}</p>
                 <p>Category: {{ article.category.name }}</p>

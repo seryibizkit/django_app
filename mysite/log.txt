@@ -62,3 +62,424 @@ ZeroDivisionError: division by zero
 2023-06-23 12:38:03,551 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2023-06-23 12:38:30,484 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
 2023-06-23 12:38:30,864 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 07:14:53,709 [INFO] django.utils.autoreload: /home/seryibizkit/.local/lib/python3.10/site-packages/requests/adapters.py changed, reloading.
+2023-06-24 07:14:54,065 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 07:29:21,395 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/forms.py changed, reloading.
+2023-06-24 07:29:22,012 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 07:29:46,869 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/forms.py changed, reloading.
+2023-06-24 07:29:47,200 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 07:30:20,132 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/forms.py changed, reloading.
+2023-06-24 07:30:20,405 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 07:30:31,920 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/forms.py changed, reloading.
+2023-06-24 07:30:32,191 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 07:36:14,800 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-24 07:36:15,269 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 10:00:18,748 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 10:06:01,575 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-24 10:06:01,848 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 10:06:44,515 [WARNING] django.request: Not Found: /favicon.ico
+2023-06-24 10:10:31,869 [WARNING] django.request: Not Found: /ru/admin
+2023-06-24 10:11:32,898 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/forms.py changed, reloading.
+2023-06-24 10:11:33,341 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 10:15:22,339 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-24 10:15:22,678 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 10:19:05,656 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-24 10:19:05,922 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 10:24:11,107 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-24 10:24:11,381 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 10:50:22,714 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 10:50:23,054 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 10:53:35,311 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 10:53:35,593 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 10:55:31,492 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 10:55:31,912 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 10:56:21,206 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 10:56:21,564 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:01:05,146 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 11:01:05,418 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:01:26,597 [WARNING] django.request: Not Found: /sentry-debug/
+2023-06-24 11:07:03,686 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-24 11:07:03,983 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:09:01,642 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-24 11:09:01,934 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:09:26,632 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-24 11:09:26,896 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:09:51,618 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-24 11:09:51,890 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:12:06,747 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-24 11:12:07,040 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:14:04,634 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 11:14:04,948 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:15:08,586 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 11:15:08,906 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:15:39,786 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 11:15:40,083 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:18:23,712 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 11:18:24,099 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:19:33,760 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 11:19:34,131 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:21:15,751 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-24 11:21:16,020 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:23:33,385 [WARNING] django.request: Method Not Allowed: /ru/shop/api/products/upload_csv/
+2023-06-24 11:32:21,115 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 11:32:21,518 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:33:09,757 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 11:33:10,054 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:33:49,132 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/models.py changed, reloading.
+2023-06-24 11:33:49,409 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:34:26,416 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 11:34:26,676 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:35:06,751 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 11:35:07,026 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:35:35,866 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 11:35:36,130 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:36:10,064 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 11:36:10,346 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:36:19,824 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/urls.py changed, reloading.
+2023-06-24 11:36:20,091 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:37:25,620 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 11:37:25,884 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:39:21,638 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/urls.py changed, reloading.
+2023-06-24 11:39:21,906 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:41:45,148 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 11:41:45,418 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:44:18,361 [ERROR] django.request: Internal Server Error: /blog/article/5/
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 38, in sentry_patched_render
+    return old_render(self)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/response.py", line 111, in render
+    self.content = self.rendered_content
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/templates.py", line 74, in rendered_content
+    return real_rendered_content.fget(self)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/response.py", line 87, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/response.py", line 69, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: blogapp/article_detail.html
+2023-06-24 11:45:25,355 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/admin.py changed, reloading.
+2023-06-24 11:45:25,804 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:46:09,921 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/admin.py changed, reloading.
+2023-06-24 11:46:10,213 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 11:46:44,223 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/admin.py changed, reloading.
+2023-06-24 11:46:44,484 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:01:38,876 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 12:01:39,378 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:02:13,336 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 12:02:13,599 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:05:01,419 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 12:05:01,737 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:06:18,936 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 12:06:19,209 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:08:30,330 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 12:08:30,623 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:09:19,917 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 12:09:20,195 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:11:14,029 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/urls.py changed, reloading.
+2023-06-24 12:11:14,298 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:11:26,753 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/urls.py changed, reloading.
+2023-06-24 12:11:27,019 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:11:46,899 [WARNING] django.request: Not Found: /blog/article/6/
+2023-06-24 12:11:55,522 [ERROR] django.request: Internal Server Error: /blog/articles/6/
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 38, in sentry_patched_render
+    return old_render(self)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/response.py", line 111, in render
+    self.content = self.rendered_content
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/templates.py", line 74, in rendered_content
+    return real_rendered_content.fget(self)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/response.py", line 89, in rendered_content
+    return template.render(context, self._request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/test/utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/test/utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'blogapp/articles' not found. 'blogapp/articles' is not a valid view function or pattern name.
+2023-06-24 12:12:24,790 [WARNING] django.request: Not Found: /blog/articles/latets/feed
+2023-06-24 12:30:54,252 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/models.py changed, reloading.
+2023-06-24 12:30:54,809 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:32:18,115 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/models.py changed, reloading.
+2023-06-24 12:32:18,386 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:32:52,384 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/views.py changed, reloading.
+2023-06-24 12:32:52,693 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:35:25,267 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/urls.py changed, reloading.
+2023-06-24 12:35:25,659 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:36:10,808 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/urls.py changed, reloading.
+2023-06-24 12:36:11,093 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:37:35,146 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/urls.py changed, reloading.
+2023-06-24 12:37:35,432 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:38:01,584 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/sitemaps/__init__.py", line 185, in _urls
+    paginator_page = self.paginator.page(page)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/sitemaps/__init__.py", line 126, in paginator
+    return paginator.Paginator(self._items(), self.limit)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/sitemaps/__init__.py", line 114, in _items
+    return self.items()
+  File "/home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/sitemap.py", line 11, in items
+    return Article.objects.filter(pud_date__isnull=False)\
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1498, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1529, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1379, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1189, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1677, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'pud_date' into field. Choices are: author, author_id, category, category_id, content, id, pub_date, tags, title
+2023-06-24 12:39:52,873 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/blogapp/sitemap.py changed, reloading.
+2023-06-24 12:39:53,147 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-24 12:39:57,395 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 38, in sentry_patched_render
+    return old_render(self)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/response.py", line 111, in render
+    self.content = self.rendered_content
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/templates.py", line 74, in rendered_content
+    return real_rendered_content.fget(self)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/response.py", line 87, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/response.py", line 71, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: sitemap.xml
+2023-06-24 12:41:37,671 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/mysite/settings.py changed, reloading.
+2023-06-24 12:41:37,985 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 11:14:00,051 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 11:14:22,437 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/options.py", line 681, in get_field
+    return self.fields_map[field_name]
+KeyError: 'author'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 34, in inner
+    response = func(request, *args, **kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 128, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/sitemaps/__init__.py", line 167, in get_urls
+    return self._urls(page, protocol, domain)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/sitemaps/__init__.py", line 185, in _urls
+    paginator_page = self.paginator.page(page)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/paginator.py", line 53, in validate_number
+    if number > self.num_pages:
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/paginator.py", line 99, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/paginator.py", line 93, in count
+    return c()
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/query.py", line 608, in count
+    return self.query.get_count(using=self.db)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 536, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 522, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1547, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 734, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 256, in get_select
+    select_mask = self.query.get_select_mask()
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 768, in get_select_mask
+    return self._get_defer_select_mask(opts, mask)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 724, in _get_defer_select_mask
+    field = opts.get_field(field_name).field
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Product has no field named 'author'
+2023-06-25 11:14:22,677 [WARNING] django.request: Not Found: /favicon.ico
+2023-06-25 11:59:51,087 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/sitemap.py changed, reloading.
+2023-06-25 11:59:51,434 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 12:01:53,107 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-25 12:01:53,402 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 12:04:46,555 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-25 12:04:46,836 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 12:06:32,251 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/urls.py changed, reloading.
+2023-06-25 12:06:32,520 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 12:06:51,580 [WARNING] django.request: Not Found: /products/latest/feed
+2023-06-25 12:08:05,632 [ERROR] django.request: Internal Server Error: /ru/shop/products/latest/feed/
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 187, in get_feed
+    title = self._get_dynamic_attr("item_title", item)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/contrib/syndication/views.py", line 103, in _get_dynamic_attr
+    return attr(obj)
+  File "/home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py", line 188, in item_title
+    return item.title
+AttributeError: 'Product' object has no attribute 'title'
+2023-06-25 12:08:26,138 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
+2023-06-25 12:08:26,563 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 12:14:22,544 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/common.py changed, reloading.
+2023-06-25 12:14:22,852 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 12:17:00,378 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-25 12:17:00,643 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 12:36:40,374 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 12:51:04,244 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-25 12:51:04,620 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 12:53:04,467 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-25 12:53:04,799 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 12:53:32,672 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-25 12:53:32,938 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 13:04:08,658 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py changed, reloading.
+2023-06-25 13:04:08,968 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 13:05:16,975 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py", line 142, in import_csv
+    safe_csv_orders(
+  File "/home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/common.py", line 29, in safe_csv_orders
+    orders = [
+  File "/home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/common.py", line 30, in <listcomp>
+    Order(**row)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/fields/related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'1'": "Order.user" must be a "User" instance.
+2023-06-25 13:07:21,068 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/common.py changed, reloading.
+2023-06-25 13:07:21,385 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 13:16:18,127 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/common.py changed, reloading.
+2023-06-25 13:16:18,591 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 13:23:01,521 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/common.py changed, reloading.
+2023-06-25 13:23:01,801 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-25 13:23:21,266 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2055, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/admin.py", line 142, in import_csv
+    safe_csv_orders(
+  File "/home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/common.py", line 39, in safe_csv_orders
+    products: Sequence[Product] = Product.objects.only("id").filter(id__in=list(row.get("products")))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1498, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1529, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1444, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1271, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/lookups.py", line 426, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "/home/seryibizkit/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2057, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2023-06-25 13:24:22,798 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/common.py changed, reloading.
+2023-06-25 13:24:23,123 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
