@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 
 import debug_toolbar.middleware
+import django.core.cache.backends.filebased
 from django.utils.translation import gettext_lazy as _
 from django.urls import reverse_lazy
 
@@ -91,6 +92,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    # 'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -101,6 +103,7 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
     'django.contrib.admindocs.middleware.XViewMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'django.middleware.cache.FetchFromCacheMiddleware',
     # 'requestdataapp.middlewares.set_useragent_on_request_middleware',
     # 'requestdataapp.middlewares.CountRequestsMiddleware',
     # 'requestdataapp.middlewares.ThrottlingIPMiddleware',
@@ -137,6 +140,15 @@ DATABASES = {
     }
 }
 
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
+        "LOCATION": "/var/tmp/django_cache",
+        "TIMEOUT": 60 * 2,
+    },
+}
+
+CACHE_MIDDLEWARE_SECONDS = 200
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

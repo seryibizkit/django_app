@@ -24,6 +24,9 @@
 </div>
 {% endif %}
 <div>
+  <a href="{% url 'shopapp:user_orders' user_id=profile.user.pk %}">>Go to user's orders</a>
+</div>
+<div>
   <a href="{% url 'myauth:accounts_list' %}">>Back to profiles list</a>
 </div>
 {% endblock %}

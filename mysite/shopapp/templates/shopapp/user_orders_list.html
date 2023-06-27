@@ -1,5 +1,4 @@
 {% extends 'shopapp/base.html' %}
-{% load cache %}
 
 {% block title %}
 {% if userinfo %}
@@ -14,7 +13,6 @@
     {% else %}
     <h1>Orders:</h1>
     {% endif %}
-    {% cache 300 owner userinfo.username %}
     {% if object_list %}
         <div>
             {% for order in object_list %}
@@ -42,8 +40,6 @@
     {% else %}
         <h3>No orders yet</h3>
     {% endif %}
-    {% endif %}
-    {% endcache %}
     <div>
             <a href="{% url 'shopapp:products_list' %}">
             >Back to products list
@@ -54,11 +50,4 @@
         >Create a new order
     </a>
     </div>
-    {% if userinfo %}
-    <div>
-    <a href="{% url 'myauth:account_details' pk=userprofile.pk %}">
-        >Back to profile details
-    </a>
-    </div>
-    {% endif %}
 {% endblock %}
