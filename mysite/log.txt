@@ -1939,3 +1939,5 @@ TypeError: Object of type OrderSerializer is not JSON serializable
 2023-06-27 11:43:08,125 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2023-06-27 11:45:57,933 [INFO] django.utils.autoreload: /home/seryibizkit/Документы/PhycharmProject/dpo_python_django/mysite/shopapp/views.py changed, reloading.
 2023-06-27 11:45:58,215 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-29 07:02:34,600 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-29 07:03:02,740 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
